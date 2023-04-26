@@ -1,0 +1,21 @@
+var NAVTREEINDEX0 =
+{
+"annotated.html":[0,0],
+"classes.html":[0,1],
+"classrational.html":[0,0,0],
+"classrational.html#a1dd39ab2daf08ee68087fdbb37be258e":[0,0,0,2],
+"classrational.html#a2b5729aef261d16cd18ff7c7fcbf8c6e":[0,0,0,3],
+"classrational.html#a56e4e8fa2c56caa4196511564ee527a8":[0,0,0,4],
+"classrational.html#a5f971ef33181044f54d8e4fee71cb957":[0,0,0,0],
+"classrational.html#a8b565720ea15ddfb17ea202e27698478":[0,0,0,5],
+"classrational.html#a9c0f08f8be5db907dc6d93ad3f5cb26b":[0,0,0,1],
+"classrational.html#aecf8fbaba92ef1367b3cc0a79f966d08":[0,0,0,6],
+"files.html":[1,0],
+"functions.html":[0,2,0],
+"functions_func.html":[0,2,1],
+"functions_rela.html":[0,2,2],
+"index.html":[],
+"pages.html":[],
+"rational_8hpp.html":[1,0,0],
+"rational_8hpp_source.html":[1,0,0]
+};

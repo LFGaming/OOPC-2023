@@ -1,0 +1,76 @@
+\hypertarget{rational_8hpp_source}{}\doxysection{rational.\+hpp}
+\mbox{\hyperlink{rational_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ RATIONAL\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ RATIONAL\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classrational}{rational}}\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \ \textcolor{keywordtype}{int}\ counter;}
+\DoxyCodeLine{00018\ \ \ \ \textcolor{keywordtype}{int}\ denominator;}
+\DoxyCodeLine{00019\ \ \ \ }
+\DoxyCodeLine{00020\ \ \ \ \textcolor{keywordtype}{void}\ reduce()\{}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ a\ =\ counter;}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ b\ =\ denominator;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \textcolor{keywordflow}{while}(\ b\ )\{}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ temp\ =\ b;}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ b\ =\ a\ \%\ b;}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ a\ =\ temp;}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\ a\ )\{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ counter\ /=\ a;}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ denominator\ /=\ a;}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00034\ \ \ \ \}}
+\DoxyCodeLine{00035\ \ \ \ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00043\ \ \ \ \mbox{\hyperlink{classrational_a5f971ef33181044f54d8e4fee71cb957}{rational}}(\ \textcolor{keywordtype}{int}\ counter,\ \textcolor{keywordtype}{int}\ denominator\ =\ 1\ ):}
+\DoxyCodeLine{00044\ \ \ \ \ \ counter(\ counter\ ),\ denominator(\ denominator\ )}
+\DoxyCodeLine{00045\ \ \ \ \{reduce();\}}
+\DoxyCodeLine{00046\ \ \ \ }
+\DoxyCodeLine{00053\ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classrational_a8b565720ea15ddfb17ea202e27698478}{operator==}}(\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classrational}{rational}}\ \&\ rhs\ )\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (\ counter\ ==\ rhs.counter\ )\ \&\&\ (\ denominator\ ==\ rhs.denominator\ );}
+\DoxyCodeLine{00055\ \ \ \ \}}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00063\ \ \ \ \textcolor{keyword}{friend}\ std::ostream\ \&\ \mbox{\hyperlink{classrational_aecf8fbaba92ef1367b3cc0a79f966d08}{operator<<}}(\ std::ostream\ \&\ lhs,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classrational}{rational}}\ \&\ rhs\ )\{}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ lhs\ }
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}["{}}\ }
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ <<\ rhs.counter\ }
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}/"{}}\ }
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ <<\ rhs.denominator}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}]"{}};}
+\DoxyCodeLine{00070\ \ \ \ \}\ \ \ }
+\DoxyCodeLine{00071\ \ \ \ }
+\DoxyCodeLine{00076\ \ \ \ \mbox{\hyperlink{classrational}{rational}}\ \mbox{\hyperlink{classrational_a9c0f08f8be5db907dc6d93ad3f5cb26b}{operator*}}(\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ rhs\ )\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classrational}{rational}}(\ counter\ *\ rhs,\ denominator\ );}
+\DoxyCodeLine{00078\ \ \ \ \}}
+\DoxyCodeLine{00079\ \ \ \ }
+\DoxyCodeLine{00084\ \ \ \ \mbox{\hyperlink{classrational}{rational}}\ \mbox{\hyperlink{classrational_a1dd39ab2daf08ee68087fdbb37be258e}{operator*}}(\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classrational}{rational}}\ \&\ rhs\ )\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classrational}{rational}}(\ }
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ counter\ *\ rhs.counter,}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ denominator\ *\ rhs.denominator}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ );}
+\DoxyCodeLine{00089\ \ \ \ \}}
+\DoxyCodeLine{00090\ \ \ \ }
+\DoxyCodeLine{00095\ \ \ \ \mbox{\hyperlink{classrational}{rational}}\ \&\ \mbox{\hyperlink{classrational_a56e4e8fa2c56caa4196511564ee527a8}{operator+=}}(\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classrational}{rational}}\ \&\ rhs\ )\{}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ counter\ =\ counter\ *\ rhs.denominator\ +\ rhs.counter\ *\ denominator;}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ denominator\ *=\ rhs.denominator;}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ reduce();}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00100\ \ \ \ \}}
+\DoxyCodeLine{00101\ \ \ \ }
+\DoxyCodeLine{00106\ \ \ \ \mbox{\hyperlink{classrational}{rational}}\ \mbox{\hyperlink{classrational_a2b5729aef261d16cd18ff7c7fcbf8c6e}{operator*=}}(\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classrational}{rational}}\ \&\ rhs\ )\{}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ counter\ =\ counter\ *\ rhs.counter;}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ denominator\ *=\ rhs.denominator;}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ reduce();}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00111\ \ \ \ \}}
+\DoxyCodeLine{00112\ \ \ \ }
+\DoxyCodeLine{00113\ \};}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

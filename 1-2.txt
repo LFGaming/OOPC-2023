@@ -1,0 +1,5 @@
+1. Hij maakt de class aan en voegt eventueel variabelen toe.
+2. initialisatie lijst.
+3. print()
+4. Van buitenaf kunnen de waardes die in de prive staan niet aangepast worden tenzij er een setter gebruikt wordt.
+5. print() staat in de book.hpp, dus als je de print() van book.hpp wil gebruiken dan moet je book::print(). Net zoals std::cout bijvoorbeeld.
