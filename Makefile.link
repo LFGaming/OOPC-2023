@@ -10,7 +10,7 @@
 
 # the location of the ti software directory
 RELATIVE          ?= .
-TI-SOFTWARE       := $(RELATIVE)/..
+TI-SOFTWARE       := C:\Users\micro\Dropbox\Luke\School
 
 # add hwlibS
 HWLIB             ?= $(TI-SOFTWARE)/hwlib

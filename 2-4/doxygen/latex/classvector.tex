@@ -1,0 +1,143 @@
+\hypertarget{classvector}{}\doxysection{vector Class Reference}
+\label{classvector}\index{vector@{vector}}
+
+
+Vector ADT.  
+
+
+
+
+{\ttfamily \#include $<$vector.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvector_a7fa147d3199381b9d8b32753bd1a6968}\label{classvector_a7fa147d3199381b9d8b32753bd1a6968}} 
+{\bfseries vector} (int x, int y)
+\item 
+\mbox{\hyperlink{classvector}{vector}} \mbox{\hyperlink{classvector_a9af16b41f973cd073b089bf5371e8a70}{operator+}} () const
+\begin{DoxyCompactList}\small\item\em ~\newline
+ The onesided (monadic) operator+ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classvector}{vector}} \mbox{\hyperlink{classvector_a9d639bc53d77f17c6ba3af1dd9549424}{operator+}} (const \mbox{\hyperlink{classvector}{vector}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em ~\newline
+ The operator+ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classvector}{vector}} \mbox{\hyperlink{classvector_ad62f9ffeab2c2b5963ca90092b89d525}{operator+=}} (const \mbox{\hyperlink{classvector}{vector}} \&rhs)
+\begin{DoxyCompactList}\small\item\em ~\newline
+ The operator+= \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classvector}{vector}} \mbox{\hyperlink{classvector_a8a04412905ce42683d8e9902dac34810}{operator$\ast$}} (int multiplier)
+\begin{DoxyCompactList}\small\item\em ~\newline
+ The operator$\ast$ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classvector}{vector}} \mbox{\hyperlink{classvector_ab6e70de7bad20e28959a3df802487726}{operator$\ast$=}} (int k)
+\begin{DoxyCompactList}\small\item\em ~\newline
+ The operator$\ast$= \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classvector_a0066b879f704f7d344ec9cd2a2f57ea3}{operator==}} (const \mbox{\hyperlink{classvector}{vector}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em ~\newline
+ compare two vectors \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvector_a0403eb3aea23a3009e276fba1d317046}\label{classvector_a0403eb3aea23a3009e276fba1d317046}} 
+int {\bfseries x}
+\item 
+\mbox{\Hypertarget{classvector_aad6de640298eae97ca0a094db5aff477}\label{classvector_aad6de640298eae97ca0a094db5aff477}} 
+int {\bfseries y}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{classvector_a7dfae4aaadeb456a6b9dbb08a0e7af15}{operator$<$$<$}} (std\+::ostream \&lhs, const \mbox{\hyperlink{classvector}{vector}} \&rhs)
+\begin{DoxyCompactList}\small\item\em ~\newline
+ Print vector \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Vector ADT. 
+
+This is an ADT that implements vector type. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvector_a8a04412905ce42683d8e9902dac34810}\label{classvector_a8a04412905ce42683d8e9902dac34810}} 
+\index{vector@{vector}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!vector@{vector}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvector}{vector}} vector\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{int}]{multiplier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+~\newline
+ The operator$\ast$ 
+
+The operator$\ast$ multiplies x and y with int. \mbox{\Hypertarget{classvector_ab6e70de7bad20e28959a3df802487726}\label{classvector_ab6e70de7bad20e28959a3df802487726}} 
+\index{vector@{vector}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!vector@{vector}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvector}{vector}} vector\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{int}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+~\newline
+ The operator$\ast$= 
+
+The operator$\ast$= multiplies the vector with parameter int, and changes vector. \mbox{\Hypertarget{classvector_a9af16b41f973cd073b089bf5371e8a70}\label{classvector_a9af16b41f973cd073b089bf5371e8a70}} 
+\index{vector@{vector}!operator+@{operator+}}
+\index{operator+@{operator+}!vector@{vector}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvector}{vector}} vector\+::operator+ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+~\newline
+ The onesided (monadic) operator+ 
+
+This operator+ returns self. \mbox{\Hypertarget{classvector_a9d639bc53d77f17c6ba3af1dd9549424}\label{classvector_a9d639bc53d77f17c6ba3af1dd9549424}} 
+\index{vector@{vector}!operator+@{operator+}}
+\index{operator+@{operator+}!vector@{vector}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvector}{vector}} vector\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvector}{vector}} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+~\newline
+ The operator+ 
+
+This operator+ adds x and y of the first vector with the second vector and returns a new vector. \mbox{\Hypertarget{classvector_ad62f9ffeab2c2b5963ca90092b89d525}\label{classvector_ad62f9ffeab2c2b5963ca90092b89d525}} 
+\index{vector@{vector}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!vector@{vector}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvector}{vector}} vector\+::operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvector}{vector}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+~\newline
+ The operator+= 
+
+The operator+= adds the right to self. \mbox{\Hypertarget{classvector_a0066b879f704f7d344ec9cd2a2f57ea3}\label{classvector_a0066b879f704f7d344ec9cd2a2f57ea3}} 
+\index{vector@{vector}!operator==@{operator==}}
+\index{operator==@{operator==}!vector@{vector}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool vector\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvector}{vector}} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+~\newline
+ compare two vectors 
+
+This operator tests for equality. It returns true if and only if the x and y of both operands are equal. 
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classvector_a7dfae4aaadeb456a6b9dbb08a0e7af15}\label{classvector_a7dfae4aaadeb456a6b9dbb08a0e7af15}} 
+\index{vector@{vector}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!vector@{vector}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{lhs,  }\item[{const \mbox{\hyperlink{classvector}{vector}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+~\newline
+ Print vector 
+
+The operator\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} prints the output of the vector in the form \texorpdfstring{$<$}{<}x, y\texorpdfstring{$>$}{>} 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{vector_8hpp}{vector.\+hpp}}\end{DoxyCompactItemize}

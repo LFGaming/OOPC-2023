@@ -1,0 +1,64 @@
+\hypertarget{vector_8hpp_source}{}\doxysection{vector.\+hpp}
+\mbox{\hyperlink{vector_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ VECTOR\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ VECTOR\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}ostream"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classvector}{vector}}\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ x;}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ y;}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{classvector}{vector}}()\{\};}
+\DoxyCodeLine{00018\ \ \ \ \ }
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{classvector}{vector}}(\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y\ ):}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ x(\ x\ ),\ y(\ y\ )}
+\DoxyCodeLine{00021\ \ \ \ \ \{\}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \mbox{\hyperlink{classvector}{vector}}\ \mbox{\hyperlink{classvector_a9af16b41f973cd073b089bf5371e8a70}{operator+}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classvector}{vector}}(\ x,\ y\ );}
+\DoxyCodeLine{00029\ \ \ \ \ \}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \mbox{\hyperlink{classvector}{vector}}\ \mbox{\hyperlink{classvector_a9d639bc53d77f17c6ba3af1dd9549424}{operator+}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classvector}{vector}}\ \&\ rhs)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classvector}{vector}}(\ x\ +\ rhs.x,\ y\ +\ rhs.y\ );}
+\DoxyCodeLine{00037\ \ \ \ \ \}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{classvector}{vector}}\ \mbox{\hyperlink{classvector_ad62f9ffeab2c2b5963ca90092b89d525}{operator+=}}(\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classvector}{vector}}\ \&\ rhs\ )\{}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ x\ =\ x\ +\ rhs.x;}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ y\ =\ y\ +\ rhs.y;}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00047\ \ \ \ \ \}}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{classvector}{vector}}\ \mbox{\hyperlink{classvector_a8a04412905ce42683d8e9902dac34810}{operator*}}(\ \textcolor{keywordtype}{int}\ multiplier\ )\{}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classvector}{vector}}(\ x\ *\ multiplier,\ y\ *\ multiplier\ );}
+\DoxyCodeLine{00055\ \ \ \ \ \}}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00061\ \ \ \ \ \mbox{\hyperlink{classvector}{vector}}\ \mbox{\hyperlink{classvector_ab6e70de7bad20e28959a3df802487726}{operator*=}}(\ \textcolor{keywordtype}{int}\ k\ )\{}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ x\ =\ x*k;}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ y\ =\ y*k;}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00065\ \ \ \ \ \}}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\ \&\ \mbox{\hyperlink{classvector_a7dfae4aaadeb456a6b9dbb08a0e7af15}{operator<<}}(\ std::ostream\ \&\ lhs,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classvector}{vector}}\ \&\ rhs\ )\{}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ lhs\ }
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}<"{}}\ }
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ <<\ rhs.x\ }
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{},\ "{}}\ }
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ <<\ rhs.y}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}>"{}};}
+\DoxyCodeLine{00078\ \ \ \ \ \}}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00086\ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classvector_a0066b879f704f7d344ec9cd2a2f57ea3}{operator==}}(\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classvector}{vector}}\ \&\ rhs\ )\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (\ x\ ==\ rhs.x\ )\ \&\&\ (\ y\ ==\ rhs.y\ );}
+\DoxyCodeLine{00088\ \ \ \ \}}
+\DoxyCodeLine{00089\ \};}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00095\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classvector}{vector}}\ \mbox{\hyperlink{vector_8hpp_a11803a172960ea57d844693b312f6777}{operator*}}(\textcolor{keywordtype}{int}\ k,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classvector}{vector}}\ \&\ rhs)\{}
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classvector}{vector}}(\ rhs.x\ *\ k,\ rhs.y\ *\ k\ );}
+\DoxyCodeLine{00097\ \}}
+\DoxyCodeLine{00098\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
