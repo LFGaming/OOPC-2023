@@ -11,3 +11,8 @@ pianocat *= ceilingcat;
 // pianocat = (230, 10, 6, 1)
 // ceilingcat = (7, 4, 5, 9)
 // happycat = (118.5, 7, 5.5, 10)
+
+
+// pianocat = (230, 10, 6, 1)
+// ceilingcat = (7, 4, 5, 9)
+// happycat = (237, 7, 5.5, 10)
