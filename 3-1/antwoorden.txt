@@ -1,0 +1,9 @@
+auto a = v1a; = klas
+auto b = a.name; = const std::array<char, 3>
+auto c = a.students[3]; =  student
+auto d = c.name; = const std::string
+auto e = c.number; = int
+auto f = c.marks[7]; = mark
+auto g = f.course; = course&
+auto h = f.number; = uint8_t
+auto i = g.name; = const std::vector<char>
