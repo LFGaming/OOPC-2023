@@ -1,0 +1,32 @@
+class vehicle {
+. . .
+};
+class car : public vehicle {
+. . .
+};
+class train : public vehicle {
+. . .
+};
+class intercity : public train {
+. . .
+};
+
+void travel(vehicle& v);
+void ovchipkaart(train& t);
+void file(car& c);
+car batmobiel;
+intercity utr_amst;
+train ICE;
+
+file(batmobiel);                // 1 geen error, batmobiel is van het type car.
+ovchipkaart(utr_amst);          // 2 geen error, omdat intercity een subclass van train is. 
+file(ICE)                       // 3 wel een error, omdat ICE een train is en dat is geen subclass van car en ook geen car zelf.
+ovchipkaart(batmobiel)          // 4 wel een error, omdat Batmobiel een car is en car is geen subclass van train.
+travel(utr_amst)                // 5 geen error, omdat utr_amst is een intercity, dat is een subclass van train, die dan weer een subclass is van vehicle.
+travel(batmobiel)               // 6 geen error, omdat Batmobiel een car is en car is een subclass van vehicle.
+intercity& ref7 = utr_amst;     // 7 geen error, we definieren een nieuwe referentie naar een intercity. 
+car& ref8 = utr_amst;           // 8 wel een error, omdat utr_amst een intercity is en dus geen (subclass) car is.
+train& ref9 = utr_amst;         // 9 geen error, omdat utr_amst een intercity is en dat is een subclass van een train.
+train& ref10 = batmobiel;       // 10 wel een error, omdat Batmobiel een car is en niet een train.
+intercity& ref11 = batmobiel;   // 11 wel een error, omdat Batmobiel een car is en niet een intercity.
+intercity& ref12 = ICE;         // 12 wel een error, omdat intercity een subclass is van train en de ICE snap de intercity uitbreiding niet.
