@@ -5,7 +5,7 @@
 #include "drawable.hpp"
 
 class line : public drawable {
-protected:
+private:
 
 	hwlib::xy end;
    

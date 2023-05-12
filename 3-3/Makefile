@@ -9,10 +9,10 @@
 #############################################################################
 
 # source files in this project (main.cpp is automatically assumed)
-SOURCES := drawable.cpp line.cpp circle.cpp ball.cpp wall.cpp
+SOURCES := drawable.cpp line.cpp circle.cpp ball.cpp wall.cpp rectangle.cpp
 
 # header files in this project
-HEADERS := drawable.hpp line.hpp circle.hpp ball.hpp wall.hpp
+HEADERS := drawable.hpp line.hpp circle.hpp ball.hpp wall.hpp rectangle.hpp
 
 # other places to look for files for this project
 SEARCH  := 

@@ -2,16 +2,16 @@
 #define WALL_HPP
 
 #include <hwlib.hpp>
-#include "line.hpp"
+#include "rectangle.hpp"
+#include "drawable.hpp"
 
-class wall : public line{
+class wall : public rectangle{
 private:
-//    hwlib::window & w;
-//    line left, right, top, bottom;
 
-    bool filled;
+    bool filled = true;
     int update_interval;
     int update_count;
+    int teller=0;
 public:
    wall( hwlib::window & w, const hwlib::xy & location, const hwlib::xy & end, int update_interval );
    void draw();
