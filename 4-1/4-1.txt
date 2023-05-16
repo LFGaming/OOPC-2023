@@ -1,0 +1,4 @@
+Beantwoord de volgende vragen:
+• Wat betekent de term ‘bare metal’? = bare metal is dat je een programma (met benodigde libraries) op alleen de microcomputer, dus zonder OS of andere dingen eromheen.
+• Wat is het nut van een ‘weak pull-up’? = Pinnen hebben standaard een interne weerstand van ongeveer 550kΩ, dit is niet veel en niet weinig.
+• Wat is het nut van een namespace, welk probleem kan je ermee vermijden? = Namespace zorgt ervoor dat je dezelfde naam kan gebruiken voor verschillende functies van verschillende libraries, en dat het dan niet in de war raakt met welke je gebruikt.
