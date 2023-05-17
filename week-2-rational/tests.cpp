@@ -5,7 +5,7 @@
 #include "rational.hpp"
 
 TEST_CASE( "constructor, two_parameters" ){
-   rational v( 3, 4 );
+   rational v( 3, 224 );
    std::stringstream s;
    s << v;
    REQUIRE( s.str() == "[3/4]" );   

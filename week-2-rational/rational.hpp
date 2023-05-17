@@ -62,10 +62,10 @@ public:
    /// decimal values.
    friend std::ostream & operator<<( std::ostream & lhs, const rational & rhs ){
       return lhs 
-         << "[" 
-         << rhs.counter 
-         << "/" 
-         << rhs.denominator
+         << "[0x" 
+         << std::hex << rhs.counter 
+         << "/0x" 
+         << std::hex << rhs.denominator
          << "]";
    }   
    
