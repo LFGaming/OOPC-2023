@@ -12,20 +12,23 @@ void kitt(hwlib::port_out &leds, hwlib::pin_in &button, hwlib::pin_in &button2) 
             button.refresh();
             i--;
         }
-
         if (i == 0)
         {
-            leds.write(0x01);
+            leds.write(0);
         }
         if (i == 1)
         {
-            leds.write(0x03);
+            leds.write(0x01);
         }
         if (i == 2)
         {
-            leds.write(0x07);
+            leds.write(0x03);
         }
         if (i == 3)
+        {
+            leds.write(0x07);
+        }
+        if (i == 4)
         {
             leds.write(0x0F);
         }
