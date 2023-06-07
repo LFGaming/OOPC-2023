@@ -1,7 +1,7 @@
-#include "sneeuwlandschap.hpp"
-#include "rectangle.hpp"
-#include "circle.hpp"
-#include "line.hpp"
+#include "sneeuwlandschap2.hpp"
+// #include "rectangle.hpp"
+// #include "circle.hpp"
+// #include "line.hpp"
 #include "hwlib.hpp"
 
 sneeuwlandschap::sneeuwlandschap(hwlib::window & w, int a){

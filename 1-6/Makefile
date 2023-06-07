@@ -12,7 +12,7 @@
 SOURCES := rectangle.cpp line.cpp circle.cpp sneeuwlandschap.cpp
 
 # header files in this project
-HEADERS := rectangle.hpp line.hpp circle.hpp sneeuwlandschap.hpp
+HEADERS := rectangle.hpp line.hpp circle.hpp sneeuwlandschap2.hpp
 
 # other places to look for files for this project
 SEARCH  := 
