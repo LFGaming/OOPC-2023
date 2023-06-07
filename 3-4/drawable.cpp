@@ -8,10 +8,11 @@ bool within( int x, int a, int b ){
     return ( x >= a ) && ( x <= b );
 }
 
-drawable::drawable( hwlib::window & w, const hwlib::xy & location, const hwlib::xy & size ):
+drawable::drawable( hwlib::window & w, const hwlib::xy & location, const hwlib::xy & size, std::vector<int> stuiter ):
     w( w ),
     location( location ),
-    size( size )
+    size( size ),
+	stuiter( stuiter )
 	{}  
    
 hwlib::ostream & drawable::print( hwlib::ostream & out ) const {

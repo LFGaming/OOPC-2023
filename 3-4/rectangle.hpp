@@ -8,8 +8,8 @@ protected:
 
 
 public:
-    rectangle(hwlib::window & w, const hwlib::xy start, const hwlib::xy end) :
-            drawable( w , start , end-start),
+    rectangle(hwlib::window & w, const hwlib::xy start, const hwlib::xy end, std::vector<int> stuiter={1,1}) :
+            drawable( w , start , end-start, stuiter),
             end(end)
     {}
 

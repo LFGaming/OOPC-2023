@@ -1,10 +1,9 @@
 #include "wall.hpp"
 #include <vector>
 wall::wall( hwlib::window & w, const hwlib::xy & location, const hwlib::xy & end, int update_interval, std::vector<int> stuiter ):
-	rectangle( w , location , end)
+	rectangle( w , location , end, stuiter)
     {
-        this->update_interval = update_interval;
-        this->stuiter = stuiter;
+        update_interval = update_interval;
     }
 
 void wall::draw(){

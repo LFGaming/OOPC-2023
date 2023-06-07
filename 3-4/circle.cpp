@@ -3,7 +3,7 @@
 circle::circle( hwlib::window & w, const hwlib::xy & midpoint, int radius ):
     drawable( w, 
         midpoint - hwlib::xy( radius, radius ), 
-        hwlib::xy( radius, radius ) * 2 ),
+        hwlib::xy( radius, radius ) * 2),
     radius( radius )
    {}
    

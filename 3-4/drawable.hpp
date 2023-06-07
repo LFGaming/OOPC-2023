@@ -10,12 +10,10 @@ protected:
 	hwlib::window & w;
 	hwlib::xy location;
 	hwlib::xy size;
-
    
 public:
-
-	drawable( hwlib::window & w, const hwlib::xy & location, const hwlib::xy & size );    
-   	std::vector<int> stuiter= {1,1}; 
+	std::vector<int> stuiter;
+	drawable( hwlib::window & w, const hwlib::xy & location, const hwlib::xy & size, std::vector<int> stuiter={1,1} );    
 	virtual void draw() = 0;
 	virtual void update(){}
 	bool overlaps( const drawable & other );   

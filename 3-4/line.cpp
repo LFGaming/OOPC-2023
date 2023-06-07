@@ -1,7 +1,7 @@
 #include "line.hpp"
 
 line::line( hwlib::window & w, const hwlib::xy & location, const hwlib::xy & end ):
-    drawable( w, location, end - location ),
+    drawable( w, location, end - location),
     end( end )
 	{}
    

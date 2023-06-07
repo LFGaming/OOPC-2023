@@ -15,7 +15,7 @@ void ball::update(){
 	}
    
 void ball::interact( drawable & other ) {
-    if( this != & other){
+    if( this != &other){
         if( overlaps( other )){
 			speed.x *= other.stuiter[0];
 			speed.y *= other.stuiter[1];
