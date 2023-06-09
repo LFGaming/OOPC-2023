@@ -1,4 +1,4 @@
-// example:
+ // example:
 // definition of the functions of a rectangle object
 
 #include "rectangle.hpp"

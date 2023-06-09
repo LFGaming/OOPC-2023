@@ -9,10 +9,10 @@
 #############################################################################
 
 # source files in this project (main.cpp is automatically assumed)
-SOURCES := rectangle.cpp line.cpp circle.cpp sneeuwlandschap.cpp
+SOURCES := rectangle.cpp line.cpp circle.cpp mixed.cpp
 
 # header files in this project
-HEADERS := rectangle.hpp line.hpp circle.hpp sneeuwlandschap2.hpp
+HEADERS := rectangle.hpp line.hpp circle.hpp mixed.hpp
 
 # other places to look for files for this project
 SEARCH  := 
